@@ -5,7 +5,7 @@ export default function App() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
     <View style={styles.banderita1}></View>
-    <Text style={styles.text}>Global</Text>
+    <Text style={styles.text}>Nacional</Text>
     <View style={styles.busfil}>
     <View style={styles.buscar}>
     <Text style={styles.text1}>Buscar</Text>
@@ -15,11 +15,11 @@ export default function App() {
     <View style={styles.empresa}>
     <View style={styles.inver2}>
     <View style={styles.inver}>
-    <Text style={styles.text2}>Apple Inc.</Text>
-    <Text style={styles.text3}>AAPL</Text>
+    <Text style={styles.text2}>Ecopetrol</Text>
+    <Text style={styles.text3}>ECOPETROL</Text>
     </View>
     <View style={styles.inver}>
-    <Text style={styles.text4}>$665.200,0</Text>
+    <Text style={styles.text4}>$2.260,0</Text>
     <Text style={styles.text5}>$0,0(0,0%)</Text>
     </View>
     </View>
@@ -27,11 +27,11 @@ export default function App() {
     <View style={styles.empresa}>
     <View style={styles.inver2}>
     <View style={styles.inver}>
-    <Text style={styles.text2}>Amazon Inc.</Text>
-    <Text style={styles.text3}>AMZN</Text>
+    <Text style={styles.text2}>Bancolombia</Text>
+    <Text style={styles.text3}>PFBCOLOM</Text>
     </View>
     <View style={styles.inver}>
-    <Text style={styles.text4}>$720.520,0</Text>
+    <Text style={styles.text4}>$34.340,0</Text>
     <Text style={styles.text5}>$0,0(0,0%)</Text>
     </View>
     </View>
