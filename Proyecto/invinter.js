@@ -1,19 +1,47 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image} from 'react-native';
 
-export default function invinter() {
+export default function App() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-    <View style={styles.banderita1}></View>
+    <View style={styles.banderita1}>
+    <Image
+        style={styles.Logo}
+        source={{
+          uri: 'https://cdn-icons-png.flaticon.com/128/3549/3549872.png',
+        }}
+      />
+    </View>
     <Text style={styles.text}>Global</Text>
     <View style={styles.busfil}>
     <View style={styles.buscar}>
+    <View style={styles.inver2}>
+    <Image
+        style={styles.Lupa}
+        source={{
+          uri: 'https://cdn-icons-png.flaticon.com/128/1280/1280594.png',
+        }}
+      />
     <Text style={styles.text1}>Buscar</Text>
     </View>
-    <View style={styles.filtro}></View>
+    </View>
+    <View style={styles.filtro}>
+    <Image
+        style={styles.filtrito}
+        source={{
+          uri: 'https://cdn-icons-png.flaticon.com/128/876/876195.png',
+        }}
+      />
+    </View>
     </View>
     <View style={styles.empresa}>
     <View style={styles.inver2}>
+    <Image
+        style={styles.Logito}
+        source={{
+          uri: 'https://1000marcas.net/wp-content/uploads/2019/11/Apple-Logo.jpg',
+        }}
+      />
     <View style={styles.inver}>
     <Text style={styles.text2}>Apple Inc.</Text>
     <Text style={styles.text3}>AAPL</Text>
@@ -26,6 +54,12 @@ export default function invinter() {
     </View>
     <View style={styles.empresa}>
     <View style={styles.inver2}>
+    <Image
+        style={styles.Logito}
+        source={{
+          uri: 'https://th.bing.com/th/id/R.1bc571434e81e728d77811f886004f8e?rik=HPB5dxcBue9o%2bQ&pid=ImgRaw&r=0',
+        }}
+      />
     <View style={styles.inver}>
     <Text style={styles.text2}>Amazon Inc.</Text>
     <Text style={styles.text3}>AMZN</Text>
@@ -38,6 +72,12 @@ export default function invinter() {
     </View>
     <View style={styles.empresa}>
     <View style={styles.inver2}>
+    <Image
+        style={styles.Logito}
+        source={{
+          uri: 'https://th.bing.com/th/id/OIP.MC6n5L0tTbaRb568X6PDPQHaHa?pid=ImgDet&w=474&h=474&rs=1',
+        }}
+      />
     <View style={styles.inver}>
     <Text style={styles.text2}>Uber</Text>
     <Text style={styles.text3}>UBER</Text>
@@ -50,6 +90,12 @@ export default function invinter() {
     </View>
     <View style={styles.empresa}>
     <View style={styles.inver2}>
+    <Image
+        style={styles.Logito}
+        source={{
+          uri: 'https://th.bing.com/th/id/OIP.XaC5G62rMIJc_kEJJD59CwHaFb?rs=1&pid=ImgDetMain',
+        }}
+      />
     <View style={styles.inver}>
     <Text style={styles.text2}>Pfizer Inc</Text>
     <Text style={styles.text3}>PFE</Text>
@@ -62,6 +108,12 @@ export default function invinter() {
     </View>
     <View style={styles.empresa}>
     <View style={styles.inver2}>
+    <Image
+        style={styles.Logito}
+        source={{
+          uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5U8nII5iVfZIFsMYmuOYRNFQgoo_981qH9Dd4KQlGCg&s',
+        }}
+      />
     <View style={styles.inver}>
     <Text style={styles.text2}>Ford</Text>
     <Text style={styles.text3}>F</Text>
@@ -86,9 +138,9 @@ const styles = StyleSheet.create({
   banderita1:{
     backgroundColor:'white',
     height: 160,
-    width:250,
+    width:160,
     justifyContent:'center',
-    borderRadius:20,
+    borderRadius:90,
     marginBottom:10,
   },
   text: {
@@ -105,8 +157,8 @@ buscar:{
   },
 filtro:{
   backgroundColor:'white',
-  height: 35,
-  width:45,
+  height: 40,
+  width:40,
   borderRadius:15,
   marginTop:30,
 },
@@ -119,7 +171,7 @@ busfil:{
 empresa:{
   backgroundColor:'white',
     height: 55,
-    width:380,
+    width:390,
     borderRadius:30,
     marginTop:20,
 },
@@ -128,31 +180,32 @@ text1: {
   fontSize:20,
   color:'gray',
   marginTop:2,
+  marginRight:200,
   },
 text2: {
   textAlign: 'left',
   fontSize:18,
   color:'#000',
-  marginLeft:70,
+  marginLeft:30,
   },
 text3: {
   textAlign: 'left',
   fontSize:18,
   color:'gray',
-  marginLeft:70,
+  marginLeft:30,
   },
 text4: {
   textAlign: 'right',
   fontSize:18,
   color:'#000',
-  marginLeft:90,
+  marginLeft:50,
   },
 text5: {
   textAlign: 'right',
   alignSelf:'flex-end',
   fontSize:18,
   color:'#000',
-  marginRight:16,
+  marginRight:25,
   },
 inver:{
   flex: 1,
@@ -162,5 +215,30 @@ inver2:{
   flex: 1,
   flexDirection: 'row',
   justifyContent: 'space-between',
+},
+Logo: {
+  width: 160,
+  height: 160,
+},
+filtrito: {
+  width: 40,
+  height: 40,
+},
+Lupa: {
+  width: 32,
+  height: 32,
+  marginLeft:10,
+},
+Logito: {
+  width: 50,
+  height: 40,
+  marginLeft:20,
+  marginTop:5,
+},
+Logito1: {
+  width: 30,
+  height: 30,
+  marginLeft:20,
+  marginTop:5,
 },
   });
