@@ -39,11 +39,11 @@ export default function App() {
     <View style={styles.empresa}>
     <View style={styles.inver2}>
     <View style={styles.inver}>
-    <Text style={styles.text2}>Grupo Nutresa</Text>
-    <Text style={styles.text3}>NUTRESA</Text>
+    <Text style={styles.text2}>Uber</Text>
+    <Text style={styles.text3}>UBER</Text>
     </View>
     <View style={styles.inver}>
-    <Text style={styles.text4}>$40.740,0</Text>
+    <Text style={styles.text4}>$281.640,0</Text>
     <Text style={styles.text5}>$0,0(0,0%)</Text>
     </View>
     </View>
@@ -51,11 +51,11 @@ export default function App() {
     <View style={styles.empresa}>
     <View style={styles.inver2}>
     <View style={styles.inver}>
-    <Text style={styles.text2}>Grupo Argos</Text>
-    <Text style={styles.text3}>GRUPOARGOS</Text>
+    <Text style={styles.text2}>Pfizer Inc</Text>
+    <Text style={styles.text3}>PFE</Text>
     </View>
     <View style={styles.inver}>
-    <Text style={styles.text4}>$16.400,0</Text>
+    <Text style={styles.text4}>$99.800,0</Text>
     <Text style={styles.text5}>$0,0(0,0%)</Text>
     </View>
     </View>
@@ -63,11 +63,11 @@ export default function App() {
     <View style={styles.empresa}>
     <View style={styles.inver2}>
     <View style={styles.inver}>
-    <Text style={styles.text2}>Grupo Aval</Text>
-    <Text style={styles.text3}>GRUPOAVAL</Text>
+    <Text style={styles.text2}>Ford</Text>
+    <Text style={styles.text3}>F</Text>
     </View>
     <View style={styles.inver}>
-    <Text style={styles.text4}>$470,0</Text>
+    <Text style={styles.text4}>$49.980,0</Text>
     <Text style={styles.text5}>$0,0(0,0%)</Text>
     </View>
     </View>
