@@ -8,7 +8,7 @@ export default function invnac() {
     <Image
         style={styles.Logo}
         source={{
-          uri: 'https://img.freepik.com/fotos-premium/bandera-colombiana-texturizada-colombia_469558-18062.jpg',
+          uri: 'https://cdn-icons-png.flaticon.com/128/855/855003.png',
         }}
       />
     </View>
@@ -137,8 +137,8 @@ const styles = StyleSheet.create({
   },
   banderita1:{
     backgroundColor:'white',
-    height: 160,
-    width:250,
+    height: 130,
+    width:130,
     justifyContent:'center',
     borderRadius:20,
     marginBottom:10,
@@ -217,8 +217,8 @@ inver2:{
   justifyContent: 'space-between',
 },
 Logo: {
-  width: 250,
-  height: 160,
+  width: 130,
+  height: 130,
   borderRadius:20,
 },
 filtrito: {
