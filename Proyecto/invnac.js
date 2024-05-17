@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, View, Image, TouchableHighlight} from 'react-native';
 
-export default function invnac({navigation}) {
+export default function Invnac({navigation}) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
     <View style={styles.banderita1}>

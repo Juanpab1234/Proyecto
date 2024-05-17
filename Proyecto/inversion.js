@@ -18,13 +18,21 @@ export default function Inversion({ navigation }) {
       </View>
       <View style={styles.objetito}>
         <View style={styles.inver3}>
-          <Image
-            style={styles.Logito2}
-            source={{
-              uri: 'https://cdn-icons-png.flaticon.com/128/9030/9030761.png',
-            }}
-          />
-          <Text style={styles.text3}>Mis inversiones</Text>
+        <TouchableHighlight
+          style={styles.empresa}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Misinver')}
+        >
+          <View style={styles.buttonContent}>
+            <Image
+              style={styles.Logito2}
+              source={{
+                uri: 'https://cdn-icons-png.flaticon.com/128/9030/9030761.png',
+              }}
+            />
+            <Text style={styles.text3}>Mis inversiones</Text>
+          </View>
+        </TouchableHighlight>
         </View>
       </View>
       <Text style={styles.text2}>¿En que quieres invertir?</Text>
@@ -128,24 +136,26 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 20,
     color: '#000',
-    marginTop: 15,
-    marginRight: 20,
+    marginBottom: 5,
+    marginRight: 30,
   },
   Logito2: {
     width: 60,
     height: 60,
-    marginLeft: 5,
+    marginBottom: 7,
+    marginRight: 70,
   },
   Logito3: {
     width: 60,
     height: 60,
-    marginLeft: 25,
+    marginLeft: 35,
     marginBottom: 10,
   },
   Logito4: {
     width: 60,
     height: 60,
     marginLeft: 55,
+    marginBottom: 7,
   },
   buttonContent: {
     flexDirection: 'row',

@@ -10,6 +10,7 @@ import Inversion from './Inversion';
 import Invinter from './Invinter';
 import Invnac from './Invnac';
 import Matpago from './Matpago';  
+import Misinver from './Misinver';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -25,6 +26,7 @@ export default function App() {
             <Stack.Screen name='Invinter' component={Invinter} />
             <Stack.Screen name='Invnac' component={Invnac} />
             <Stack.Screen name='Matpago' component={Matpago} />
+            <Stack.Screen name='Misinver' component={Misinver} />
           </Stack.Navigator>
         </SafeAreaView>
       </NavigationContainer>

@@ -8,11 +8,11 @@ export default function Invinter({navigation}) {
     <Image
         style={styles.Logo}
         source={{
-          uri: 'https://cdn-icons-png.flaticon.com/128/3549/3549872.png',
+          uri: 'https://cdn-icons-png.flaticon.com/128/9030/9030761.png',
         }}
       />
     </View>
-    <Text style={styles.text}>Global</Text>
+    <Text style={styles.text}>Mis inversiones</Text>
     <View style={styles.busfil}>
     <View style={styles.buscar}>
     <View style={styles.inver2}>
@@ -75,15 +75,15 @@ export default function Invinter({navigation}) {
     <Image
         style={styles.Logito}
         source={{
-          uri: 'https://th.bing.com/th/id/OIP.MC6n5L0tTbaRb568X6PDPQHaHa?pid=ImgDet&w=474&h=474&rs=1',
+          uri: 'https://thumbor.forbes.com/thumbor/416x416/filters:format(jpg)/https://i.forbesimg.com/media/lists/companies/ecopetrol_416x416.jpg',
         }}
       />
     <View style={styles.inver}>
-    <Text style={styles.text2}>Uber</Text>
-    <Text style={styles.text3}>UBER</Text>
+    <Text style={styles.text2}>Ecopetrol</Text>
+    <Text style={styles.text3}>ECOPETROL</Text>
     </View>
     <View style={styles.inver}>
-    <Text style={styles.text4}>$281.640,0</Text>
+    <Text style={styles.text4}>$2.260,0</Text>
     <Text style={styles.text5}>$0,0(0,0%)</Text>
     </View>
     </View>
@@ -93,33 +93,15 @@ export default function Invinter({navigation}) {
     <Image
         style={styles.Logito}
         source={{
-          uri: 'https://th.bing.com/th/id/OIP.XaC5G62rMIJc_kEJJD59CwHaFb?rs=1&pid=ImgDetMain',
+          uri: 'https://vignette.wikia.nocookie.net/logopedia/images/9/94/Bancolombia_symbol_2006.png/revision/latest/scale-to-width-down/592?cb=20170817191519',
         }}
       />
     <View style={styles.inver}>
-    <Text style={styles.text2}>Pfizer Inc</Text>
-    <Text style={styles.text3}>PFE</Text>
+    <Text style={styles.text2}>Bancolombia</Text>
+    <Text style={styles.text3}>PFBCOLOM</Text>
     </View>
     <View style={styles.inver}>
-    <Text style={styles.text4}>$99.800,0</Text>
-    <Text style={styles.text5}>$0,0(0,0%)</Text>
-    </View>
-    </View>
-    </View>
-    <View style={styles.empresa}>
-    <View style={styles.inver2}>
-    <Image
-        style={styles.Logito}
-        source={{
-          uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5U8nII5iVfZIFsMYmuOYRNFQgoo_981qH9Dd4KQlGCg&s',
-        }}
-      />
-    <View style={styles.inver}>
-    <Text style={styles.text2}>Ford</Text>
-    <Text style={styles.text3}>F</Text>
-    </View>
-    <View style={styles.inver}>
-    <Text style={styles.text4}>$49.980,0</Text>
+    <Text style={styles.text4}>$34.340,0</Text>
     <Text style={styles.text5}>$0,0(0,0%)</Text>
     </View>
     </View>
@@ -230,6 +212,7 @@ inver2:{
 Logo: {
   width: 160,
   height: 160,
+  backgroundColor: 'black',
 },
 filtrito: {
   width: 40,
