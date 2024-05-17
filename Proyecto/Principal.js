@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     marginLeft: 45,
     marginTop: 40,
-    justifyContent: 'center', // Opcional: Asegura que el contenido esté centrado
+    justifyContent: 'center', 
   },
   text2: {
     textAlign: 'center',
@@ -87,10 +87,4 @@ const styles = StyleSheet.create({
     height: 160,
     borderRadius: 19,
   },
-  text4: {
-    textAlign: 'center',
-    fontSize:20,
-    color:'black',
-    marginTop:5,
-    },
 });
