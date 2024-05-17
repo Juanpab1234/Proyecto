@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View, Image} from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image, TouchableHighlight} from 'react-native';
 
-export default function invnac() {
+export default function invnac({navigation}) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
     <View style={styles.banderita1}>
@@ -124,6 +124,17 @@ export default function invnac() {
     </View>
     </View>
     </View>
+    <View>
+    <TouchableHighlight
+          style={styles.boton}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Inversion')}
+        >
+          <View>
+            <Text style={styles.text6}>Volver</Text>
+          </View>
+        </TouchableHighlight>
+    </View>
     </ScrollView>
   );
 }
@@ -242,4 +253,17 @@ Logito1: {
   marginLeft:20,
   marginTop:5,
 },
+boton:{
+  backgroundColor:'#30ded5',
+  height: 40,
+  width:145,
+  borderRadius:30,
+  marginTop:20,
+},
+text6: {
+  textAlign: 'center',
+  fontSize:20,
+  color:'black',
+  marginTop:5,
+  },
   });

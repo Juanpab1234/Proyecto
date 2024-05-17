@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View, Image, Button } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image, TouchableHighlight } from 'react-native';
 
 export default function Principal({ navigation }) {
   return (
@@ -13,15 +13,29 @@ export default function Principal({ navigation }) {
         />
       </View>
       <Text style={styles.text}>BIENVENIDOS</Text>
-      <View style={styles.empresa}>
-        <Button 
-          title="Login"
+      <View>
+        <TouchableHighlight
+          style={styles.empresa}
+          underlayColor="#d3d3d3"
           onPress={() => navigation.navigate('Login')}
-        />
+        >
+          <View>
+            <Text style={styles.text2}>Ingresar</Text>
+            <Text style={styles.text1}>Iniciar</Text>
+          </View>
+        </TouchableHighlight>
       </View>
-      <View style={styles.empresa}>
-        <Text style={styles.text2}>REGISTRAR</Text>
-        <Text style={styles.text1}>Nuevo Usuario</Text>
+      <View>
+      <TouchableHighlight
+          style={styles.empresa}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Registro')}
+        >
+          <View>
+            <Text style={styles.text2}>Registrar</Text>
+            <Text style={styles.text1}>Nuevo usuario</Text>
+          </View>
+        </TouchableHighlight>
       </View>
     </ScrollView>
   );
@@ -48,13 +62,13 @@ const styles = StyleSheet.create({
     color: '#30ded5',
   },
   empresa: {
-    textAlign: 'center',
     backgroundColor: 'white',
-    height: 55,
+    height: 60,
     width: 200,
     borderRadius: 30,
     marginLeft: 45,
     marginTop: 40,
+    justifyContent: 'center', // Opcional: Asegura que el contenido esté centrado
   },
   text2: {
     textAlign: 'center',
@@ -67,11 +81,16 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: 'gray',
     marginLeft: 4,
-    marginTop: 10,
   },
   Logo: {
     width: 250,
     height: 160,
     borderRadius: 19,
   },
+  text4: {
+    textAlign: 'center',
+    fontSize:20,
+    color:'black',
+    marginTop:5,
+    },
 });

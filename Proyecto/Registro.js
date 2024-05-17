@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View, Image} from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image, TouchableHighlight} from 'react-native';
 
-export default function App() {
+export default function Registro({navigation}) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
     <Text style={styles.text}>BIENVENIDOS 🤗</Text>
-    <Text style={styles.text1}>Por Favor Ingrese Su Información</Text>
+    <Text style={styles.text1}>Por favor ingrese su información</Text>
     <View style={styles.separacion}>
     <Text style={styles.text2}>Nombre</Text>
     <View style={styles.datos}></View>
@@ -31,11 +31,27 @@ export default function App() {
     <View style={styles.datos4}></View>
     </View>
     <View style={styles.separacion}>
-    <View style={styles.boton1}>
-    <Text style={styles.text4}>Registrar</Text>
+    <View>
+    <TouchableHighlight
+          style={styles.boton1}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Login')}
+        >
+          <View>
+            <Text style={styles.text4}>Registrar</Text>
+          </View>
+        </TouchableHighlight>
     </View>
-    <View style={styles.boton2}>
-    <Text style={styles.text4}>Volver</Text>
+    <View>
+    <TouchableHighlight
+          style={styles.boton2}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Principal')}
+        >
+          <View>
+            <Text style={styles.text4}>Volver</Text>
+          </View>
+        </TouchableHighlight>
     </View>
     </View> 
     </ScrollView>
@@ -112,7 +128,7 @@ datos:{
   },
   boton1:{
     backgroundColor:'#30ded5',
-    height: 40,
+    height: 45,
     width:130,
     borderRadius:30,
     marginTop:50,
@@ -138,6 +154,6 @@ datos:{
     textAlign: 'center',
     fontSize:20,
     color:'#fff',
-    marginTop:5,
+    marginTop:7,
     },
   });

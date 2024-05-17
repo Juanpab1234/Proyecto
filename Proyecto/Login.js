@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View, Image} from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image, TouchableHighlight} from 'react-native';
 
-export default function App() {
+export default function Login({navigation}) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.Bienvenido}>
@@ -24,11 +24,27 @@ export default function App() {
     <View style={styles.datos4}></View>
     </View>
     <View style={styles.separacion}>
-    <View style={styles.boton1}>
-    <Text style={styles.text4}>Iniciar Sesion</Text>
+    <View>
+    <TouchableHighlight
+          style={styles.boton1}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Inversion')}
+        >
+          <View>
+            <Text style={styles.text4}>Iniciar sesión</Text>
+          </View>
+        </TouchableHighlight>
     </View>
-    <View style={styles.boton2}>
-    <Text style={styles.text4}>Volver</Text>
+    <View>
+    <TouchableHighlight
+          style={styles.boton2}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Principal')}
+        >
+          <View>
+            <Text style={styles.text4}>Volver</Text>
+          </View>
+        </TouchableHighlight>
     </View>
     </View> 
     </ScrollView>
@@ -90,7 +106,7 @@ datos:{
   boton1:{
     backgroundColor:'#30ded5',
     height: 40,
-    width:130,
+    width:145,
     borderRadius:30,
     marginTop:50,
 
@@ -98,7 +114,7 @@ datos:{
   boton2:{
     backgroundColor:'#30ded5',
     height: 40,
-    width:130,
+    width:145,
     borderRadius:30,
     marginTop:50,
     marginLeft:50,

@@ -1,15 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import Principal from './Principal';
 import Login from './Login';
 import Registro from './Registro';
-import inversion from './inversion';
-import invinter from './invinter';
-import invnac from './invnac';
-import matpago from './matpago';
+import Inversion from './Inversion';
+import Invinter from './Invinter';
+import Invnac from './Invnac';
+import Matpago from './Matpago';  
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -17,14 +17,14 @@ export default function App() {
     <SafeAreaProvider>
       <NavigationContainer>
         <SafeAreaView style={{ flex: 1 }}>
-          <Stack.Navigator>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name='Principal' component={Principal} />
             <Stack.Screen name='Login' component={Login} />
             <Stack.Screen name='Registro' component={Registro} />
-            <Stack.Screen name='Inversion' component={inversion} />
-            <Stack.Screen name='Invinter' component={invinter} />
-            <Stack.Screen name='Invnac' component={invnac} />
-            <Stack.Screen name='Matpago' component={matpago} />
+            <Stack.Screen name='Inversion' component={Inversion} />
+            <Stack.Screen name='Invinter' component={Invinter} />
+            <Stack.Screen name='Invnac' component={Invnac} />
+            <Stack.Screen name='Matpago' component={Matpago} />
           </Stack.Navigator>
         </SafeAreaView>
       </NavigationContainer>

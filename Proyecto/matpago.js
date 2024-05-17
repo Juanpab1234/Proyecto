@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, View, Image} from 'react-native';
 
-export default function App() {
+export default function matpago() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
     <Text style={styles.text}>INGRESE SU MÉTODO DE PAGO</Text>
