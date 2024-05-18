@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View, Image} from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image, TouchableHighlight } from 'react-native';
 
-export default function Matpago() {
+export default function Matpago({navigation}) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
     <Text style={styles.text}>INGRESE SU MÉTODO DE PAGO</Text>
@@ -31,11 +31,27 @@ export default function Matpago() {
     <View style={styles.daticos3}></View>
     </View>
     <View style={styles.separacion}>
-    <View style={styles.botoncitos}>
-    <Text style={styles.text4}>Agregar</Text>
+    <View>
+    <TouchableHighlight
+          style={styles.botoncitos}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Misinver')}
+        >
+          <View>
+            <Text style={styles.text4}>Agregar</Text>
+          </View>
+        </TouchableHighlight>
     </View>
-    <View style={styles.botoncitos1}>
-    <Text style={styles.text4}>Volver</Text>
+    <View>
+    <TouchableHighlight
+          style={styles.botoncitos1}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Misinver')}
+        >
+          <View>
+            <Text style={styles.text4}>Volver</Text>
+          </View>
+        </TouchableHighlight>
     </View>
     </View> 
     </ScrollView>
@@ -129,7 +145,7 @@ daticos:{
   text4: {
     textAlign: 'center',
     fontSize:20,
-    color:'#fff',
+    color:'black',
     marginTop:5,
     },
   });

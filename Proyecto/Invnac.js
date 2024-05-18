@@ -57,7 +57,7 @@ export default function Invnac({navigation}) {
     <Image
         style={styles.Logito}
         source={{
-          uri: 'https://vignette.wikia.nocookie.net/logopedia/images/9/94/Bancolombia_symbol_2006.png/revision/latest/scale-to-width-down/592?cb=20170817191519',
+          uri: 'https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/3b/b5/26/3bb526ab-664b-4940-ac05-97eae6d3e9c4/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
         }}
       />
     <View style={styles.inver}>

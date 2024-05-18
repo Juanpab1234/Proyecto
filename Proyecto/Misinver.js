@@ -34,77 +34,101 @@ export default function Invinter({navigation}) {
       />
     </View>
     </View>
-    <View style={styles.empresa}>
-    <View style={styles.inver2}>
-    <Image
-        style={styles.Logito}
-        source={{
-          uri: 'https://1000marcas.net/wp-content/uploads/2019/11/Apple-Logo.jpg',
-        }}
-      />
-    <View style={styles.inver}>
-    <Text style={styles.text2}>Apple Inc.</Text>
-    <Text style={styles.text3}>AAPL</Text>
+    <View>
+    <TouchableHighlight
+          style={styles.empresa}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Apple')}
+        >
+          <View style={styles.inver2}>
+            <Image
+              style={styles.Logito}
+              source={{
+                uri: 'https://1000marcas.net/wp-content/uploads/2019/11/Apple-Logo.jpg',
+              }}
+            />
+            <View style={styles.inver}>
+            <Text style={styles.text2}>Apple Inc.</Text>
+            <Text style={styles.text3}>AAPL</Text>
+            </View> 
+            <View style={styles.inver}>
+            <Text style={styles.text4}>$665.200,0</Text>
+            <Text style={styles.text5}>$0,0(0,0%)</Text>
+            </View>
+          </View>
+        </TouchableHighlight>
     </View>
-    <View style={styles.inver}>
-    <Text style={styles.text4}>$665.200,0</Text>
-    <Text style={styles.text5}>$0,0(0,0%)</Text>
+    <View>
+    <TouchableHighlight
+          style={styles.empresa}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Amazon')}
+        >
+          <View style={styles.inver2}>
+            <Image
+              style={styles.Logito}
+              source={{
+                uri: 'https://th.bing.com/th/id/R.1bc571434e81e728d77811f886004f8e?rik=HPB5dxcBue9o%2bQ&pid=ImgRaw&r=0',
+              }}
+            />
+            <View style={styles.inver}>
+              <Text style={styles.text2}>Amazon Inc.</Text>
+              <Text style={styles.text3}>AMZN</Text>
+            </View>
+            <View style={styles.inver}>
+              <Text style={styles.text4}>$720.520,0</Text>
+              <Text style={styles.text5}>$0,0(0,0%)</Text>
+            </View>
+          </View>
+        </TouchableHighlight>
     </View>
+    <View>
+    <TouchableHighlight
+          style={styles.empresa}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Ecopetrol')}
+        >
+          <View style={styles.inver2}>
+            <Image
+              style={styles.Logito}
+              source={{
+                uri: 'https://thumbor.forbes.com/thumbor/416x416/filters:format(jpg)/https://i.forbesimg.com/media/lists/companies/ecopetrol_416x416.jpg',
+              }}
+            />
+            <View style={styles.inver}>
+              <Text style={styles.text2}>Ecopetrol</Text>
+              <Text style={styles.text3}>ECOPETROL</Text>
+            </View>
+            <View style={styles.inver}>
+              <Text style={styles.text4}>$2.260,0</Text>
+              <Text style={styles.text5}>$0,0(0,0%)</Text>
+            </View>
+          </View>
+        </TouchableHighlight>
     </View>
-    </View>
-    <View style={styles.empresa}>
-    <View style={styles.inver2}>
-    <Image
-        style={styles.Logito}
-        source={{
-          uri: 'https://th.bing.com/th/id/R.1bc571434e81e728d77811f886004f8e?rik=HPB5dxcBue9o%2bQ&pid=ImgRaw&r=0',
-        }}
-      />
-    <View style={styles.inver}>
-    <Text style={styles.text2}>Amazon Inc.</Text>
-    <Text style={styles.text3}>AMZN</Text>
-    </View>
-    <View style={styles.inver}>
-    <Text style={styles.text4}>$720.520,0</Text>
-    <Text style={styles.text5}>$0,0(0,0%)</Text>
-    </View>
-    </View>
-    </View>
-    <View style={styles.empresa}>
-    <View style={styles.inver2}>
-    <Image
-        style={styles.Logito}
-        source={{
-          uri: 'https://thumbor.forbes.com/thumbor/416x416/filters:format(jpg)/https://i.forbesimg.com/media/lists/companies/ecopetrol_416x416.jpg',
-        }}
-      />
-    <View style={styles.inver}>
-    <Text style={styles.text2}>Ecopetrol</Text>
-    <Text style={styles.text3}>ECOPETROL</Text>
-    </View>
-    <View style={styles.inver}>
-    <Text style={styles.text4}>$2.260,0</Text>
-    <Text style={styles.text5}>$0,0(0,0%)</Text>
-    </View>
-    </View>
-    </View>
-    <View style={styles.empresa}>
-    <View style={styles.inver2}>
-    <Image
-        style={styles.Logito}
-        source={{
-          uri: 'https://vignette.wikia.nocookie.net/logopedia/images/9/94/Bancolombia_symbol_2006.png/revision/latest/scale-to-width-down/592?cb=20170817191519',
-        }}
-      />
-    <View style={styles.inver}>
-    <Text style={styles.text2}>Bancolombia</Text>
-    <Text style={styles.text3}>PFBCOLOM</Text>
-    </View>
-    <View style={styles.inver}>
-    <Text style={styles.text4}>$34.340,0</Text>
-    <Text style={styles.text5}>$0,0(0,0%)</Text>
-    </View>
-    </View>
+    <View>
+    <TouchableHighlight
+          style={styles.empresa}
+          underlayColor="#d3d3d3"
+          onPress={() => navigation.navigate('Bancolombia')}
+        >
+          <View style={styles.inver2}>
+            <Image
+              style={styles.Logito}
+              source={{
+                uri: 'https://vignette.wikia.nocookie.net/logopedia/images/9/94/Bancolombia_symbol_2006.png/revision/latest/scale-to-width-down/592?cb=20170817191519',
+              }}
+            />
+          <View style={styles.inver}>
+            <Text style={styles.text2}>Bancolombia</Text>
+            <Text style={styles.text3}>PFBCOLOM</Text>
+          </View>
+            <View style={styles.inver}>
+              <Text style={styles.text4}>$34.340,0</Text>
+              <Text style={styles.text5}>$0,0(0,0%)</Text>
+            </View>
+          </View>
+        </TouchableHighlight>
     </View>
     <View>
     <TouchableHighlight

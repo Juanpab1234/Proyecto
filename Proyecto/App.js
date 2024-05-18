@@ -11,6 +11,10 @@ import Invinter from './Invinter';
 import Invnac from './Invnac';
 import Matpago from './Matpago';  
 import Misinver from './Misinver';
+import Apple from './Apple';
+import Amazon from './Amazon';
+import Bancolombia from './Bancolombia';
+import Ecopetrol from './Ecopetrol';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -27,6 +31,10 @@ export default function App() {
             <Stack.Screen name='Invnac' component={Invnac} />
             <Stack.Screen name='Matpago' component={Matpago} />
             <Stack.Screen name='Misinver' component={Misinver} />
+            <Stack.Screen name='Apple' component={Apple} />
+            <Stack.Screen name='Amazon' component={Amazon} />
+            <Stack.Screen name='Bancolombia' component={Bancolombia} />
+            <Stack.Screen name='Ecopetrol' component={Ecopetrol} />
           </Stack.Navigator>
         </SafeAreaView>
       </NavigationContainer>
